@@ -1,0 +1,12 @@
+class Main
+{
+public static void main(String args[])
+{
+float a=10, b=20, c=a+b, s=a-b, m=a*b, d=a/b, e=a%b;
+System.out.printf("\n a+b=" +c);
+System.out.printf("\n a-b=" +s);
+System.out.printf("\n a*b=" +m);
+System.out.printf("\n a/b=" +d);
+System.out.printf("\n a mod b=" +e);
+}
+}
