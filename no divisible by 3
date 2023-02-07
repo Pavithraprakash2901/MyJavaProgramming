@@ -1,0 +1,19 @@
+import java.util.*;
+
+class Main
+{
+public static void main(String args[])
+{
+Scanner obj=new Scanner(System.in);
+int a=obj.nextInt();
+if(a%3==0)
+{
+System.out.println("this is divisible by 3");
+}
+else
+{
+System.out.println("this is not divisible by 3 and the remainder is:"+a%3);
+}
+}
+}
+
