@@ -1,0 +1,13 @@
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+       Scanner obj=new Scanner(System.in);
+       char c =obj.next().charAt(0);
+       int ascii=(int) c;
+       System.out.println("c=" +ascii);
+        
+    }
+    
+}
