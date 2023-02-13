@@ -1,0 +1,27 @@
+import java.utill.scanner;
+
+class swap{
+   public void method(){
+     int x;
+     int y;
+     temp=x;
+     x=y;
+     y=temp;
+     System.out.println("x= "+x);
+     System.out.println("y= "+y);
+} 
+  public static void main(String args[])
+{ 
+  Scanner sc = new Scanner(System.in);
+  int a;
+  int b;
+  System.out.println("ENTER A:");
+  a=sc.nextInt(); 
+  System.out.print("ENTER B:");
+  b=sc.nextInt();
+  Scanner sc = new Scanner(System.in);
+  swap sc= new method;
+  sc.swapping(a,b);
+}
+}
+  
