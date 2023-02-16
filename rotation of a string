@@ -1,0 +1,10 @@
+import java.util.*;
+public class rotationofastring {
+    public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    String str1 = sc.next();
+    String str2 =sc.next();
+    String p=str1+str1;
+    System.out.println(p.contains(str2));
+    }
+}
