@@ -1,0 +1,24 @@
+import java.util.*;
+class Array
+{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int a[] = new int[n];
+        for(int i=0;i<a.length;i++)
+        {
+            a[i]= sc.nextInt();
+        }
+        System.out.println("****** m1 : for loop******");
+        for(int i=0;i<a.length;i++)
+        {
+            System.out.print(a[i] +" ");
+        }
+        System.out.print("\n");
+        System.out.println("******m2: for each loop******");
+        for(int ele : a)
+        {
+            System.out.print(ele +" ");
+        }
+    }
+}
