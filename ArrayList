@@ -1,0 +1,66 @@
+import java.util.ArrayList; 
+import java.util.Scanner;
+import java.util.Comparator;
+class Array{
+    public static void main(String[] args)
+    {
+        //creating arraylist
+        ArrayList<Integer> pavi = new ArrayList<>();
+        //adding values in list
+        pavi.add(1);
+        pavi.add(2);
+        System.out.println("adding 1 by 1 val: " +pavi);
+        
+        Scanner sc =new Scanner(System.in);
+        System.out.println("enter size:");
+        int n = sc.nextInt();
+        System.out.println("nter val fr arrlist:1 ");
+        for(int i=0;i<n;i++)
+        {
+              pavi.add(sc.nextInt());
+        }
+        System.out.println("adding val by user: " +pavi);
+        System.out.print("\n");
+
+        //changing val by index ,element
+        pavi.set(1,100);
+        System.out.println("changed array : " +pavi);
+        System.out.print("\n");
+
+        //concatenate 2 arrlist
+        ArrayList<Integer> b = new ArrayList<>();
+        System.out.println("***2nd arrlist");
+        System.out.println("nter size fr 2nd arr: ");
+        int k = sc.nextInt();
+        for(int i=0;i<k;i++)
+        {
+              b.add(sc.nextInt());
+        }
+        pavi.addAll(b); //concat cmnd <-----------------
+        System.out.println("concated arrList: " +pavi);
+        System.out.print("\n");
+
+
+        //printing index val
+        int n1 = pavi.get(1);
+        System.out.println(pavi);
+        System.out.println("printing particular index val "+n1);
+        System.out.print("\n");
+
+
+        //removing index val
+        int n2 = pavi.remove(3);
+        System.out.println("removed index" +n2);
+        System.out.println(pavi);
+        System.out.print("\n");
+
+        //getting size of arraylist
+        int size = pavi.size();
+        System.out.println("sizeof arraylist :"+ size);
+        System.out.println("\n");
+
+        //sorting the array
+        pavi.sort(Comparator.naturalOrder());
+        System.out.println("sort" +" ");
+    }
+}
