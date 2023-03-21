@@ -1,0 +1,21 @@
+// over riding
+class overriding
+{
+    void ride()
+    {
+        System.out.println("Parent class");
+    }
+}
+class Main extends overriding
+{
+    void ride()
+    {
+        System.out.println("Child class");
+        super.ride();
+    }
+    public static void main(String[] args)
+    {
+        Main obj = new Main();
+        obj.ride();
+    }
+}
