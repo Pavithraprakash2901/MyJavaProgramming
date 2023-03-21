@@ -1,0 +1,24 @@
+// overloading
+
+class Main{
+    
+    void poly(int i)
+    {
+        System.out.println("Hello");
+    }
+    void poly(double f)
+    {
+        System.out.println("Welcome");
+    }
+    void poly(String s)
+    {
+        System.out.println(s);
+    }
+    public static void main(String[] args)
+    {
+        Main obj = new Main();
+        obj.poly(3.14);
+        obj.poly(5);
+        obj.poly("vasanth monkey");
+    }
+}
