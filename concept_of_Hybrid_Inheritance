@@ -1,0 +1,24 @@
+//Hybrid inheritance
+
+class B{
+    int one = 1;
+}
+class c extends B{
+    int two = 2;
+}
+class D extends B{
+    int t=3;
+}
+class E extends D{
+    int f=4;
+}
+class Main{
+    public static void main(String Args[])
+    {
+        E obj = new E();
+        c ob = new c();
+        System.out.println(obj.f);
+        System.out.println(obj.t);
+        System.out.println(ob.two);
+    }
+}
