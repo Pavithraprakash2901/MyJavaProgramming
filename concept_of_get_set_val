@@ -1,0 +1,22 @@
+// ENCAPSULATION (get set methods)
+
+class ans{
+    private int a;
+    int getval()
+    {
+        return a;
+    }
+    void setval(int x)
+    {
+        a=x;
+    }
+}
+class Main{
+    public static void main(String[] args)
+    {
+        ans obj = new ans();
+        obj.setval(200);
+        int b=obj.getval();
+        System.out.println(b);
+    }
+}
